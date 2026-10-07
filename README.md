@@ -1,48 +1,54 @@
-## Running the App
+# smart it ticketing system
 
-Follow these steps to get the application up and running:
+a full-stack it ticketing system built with react, spring boot, mongodb, and docker, with automated ci/cd using github actions.
 
-1. **Clone the Repository**
+**live locally:** [http://localhost:3000](http://localhost:3000)
 
-   ```bash
-   git clone https://github.com/jakemaxell/IT-ticketing-system.git
-   cd IT-ticketing-system
-   ```
+## features
 
-2. **Install Maven**
+- user ticket management
+- create, update, and track tickets
+- ticket status management
+- priority and category management
+- react-based frontend
+- spring boot rest api
+- mongodb database
+- dockerized application
+- github actions ci/cd
 
-   Download and install Maven from the [official website](https://maven.apache.org/download.cgi).
+## tech stack
 
-3. **Install Docker**
+### frontend
+- react.js
+- javascript
+- html
+- css
 
-   Download and install Docker from [Docker Desktop](https://www.docker.com/products/docker-desktop/).
+### backend
+- java
+- spring boot
+- spring boot rest api
 
-4. **Start Docker**
+### database
+- mongodb
 
-   Ensure Docker is running by opening the Docker application.
+### devops
+- docker
+- docker compose
+- github actions
+- git
+- github
 
-5. **Run the Setup Script**
+## project structure
 
-   Navigate to the scripts directory and run the appropriate script for your operating system:
-
-   - **Windows:**
-
-     ```bash
-     cd scripts
-     .\startup-for-windows.bat
-     ```
-
-   - **Mac/Linux:**
-
-     ```bash
-     cd scripts
-     sh startup-for-linux-or-mac.sh
-     ```
-
-6. **Wait for Setup to Complete**
-
-   Allow 5-10 minutes for the setup process to finish.
-
-7. **Access the Application**
-
-   Open your web browser and go to [http://localhost:3000](http://localhost:3000).
+```text
+smart-it-ticketing-system/
+│
+├── backend/                 # spring boot backend
+├── frontend/                # react frontend
+├── scripts/                 # startup scripts
+├── .github/
+│   └── workflows/           # github actions workflows
+│
+├── docker-compose.yml
+└── README.md
